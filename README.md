@@ -139,6 +139,49 @@ This document outlines the Low-Level Design (LLD) for a **Vehicle Parking Manage
 - Third-party integrations are not included in this phase.
 
 ---
-
+### 4. Folder Structure
+```
+vehicle-parking-management-system
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── parking
+│   │   │           ├── controllers
+│   │   │           │   ├── UserController.java
+│   │   │           │   ├── ParkingSlotController.java
+│   │   │           │   ├── VehicleLogController.java
+│   │   │           │   ├── ReservationController.java
+│   │   │           │   └── BillingController.java
+│   │   │           ├── entities
+│   │   │           │   ├── User.java
+│   │   │           │   ├── ParkingSlot.java
+│   │   │           │   ├── VehicleLog.java
+│   │   │           │   ├── Reservation.java
+│   │   │           │   └── Invoice.java
+│   │   │           ├── repositories
+│   │   │           │   ├── UserRepository.java
+│   │   │           │   ├── ParkingSlotRepository.java
+│   │   │           │   ├── VehicleLogRepository.java
+│   │   │           │   ├── ReservationRepository.java
+│   │   │           │   └── InvoiceRepository.java
+│   │   │           ├── services
+│   │   │           │   ├── UserService.java
+│   │   │           │   ├── ParkingSlotService.java
+│   │   │           │   ├── VehicleLogService.java
+│   │   │           │   ├── ReservationService.java
+│   │   │           │   └── BillingService.java
+│   │   │           └── dtos
+│   │   │               ├── UserDTO.java
+│   │   │               ├── ParkingSlotDTO.java
+│   │   │               ├── VehicleLogDTO.java
+│   │   │               ├── ReservationDTO.java
+│   │   │               └── InvoiceDTO.java
+│   │   └── resources
+│   │       ├── application.properties
+│   │       └── bootstrap.yml
+├── pom.xml
+└── README.md
+```
 ## Conclusion
 The **Vehicle Parking Management System** is designed to provide a robust and scalable solution for managing parking operations efficiently. It ensures seamless integration of core modules like user management, parking slot management, vehicle logging, reservations, and billing.
