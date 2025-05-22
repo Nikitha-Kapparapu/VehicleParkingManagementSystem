@@ -139,7 +139,7 @@ This document outlines the Low-Level Design (LLD) for a **Vehicle Parking Manage
 - Third-party integrations are not included in this phase.
 
 ---
-### 4. Folder Structure
+###  Folder Structure
 ```
 vehicle-parking-management-system
 ├── src
